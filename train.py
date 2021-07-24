@@ -283,7 +283,9 @@ def train(args, trainA_loader, trainB_loader, testA_loader, testB_loader, G_A2B,
                     test(args, G_A2B, G_B2A, testA_loader, testB_loader, 'normal', i)
                     test(args, G_A2B_ema, G_B2A_ema, testA_loader, testB_loader, 'ema', i)
 
-            if (i+1) % 2000 == 0:
+            if (i+1) % 3800 == 0:
+                model_name = "ck.pt"
+                drive_path = f"/content/drive/My Drive/{model_name}"
                 torch.save(
                     {
                         'G_A2B': G_A2B_module.state_dict(),
@@ -297,7 +299,7 @@ def train(args, trainA_loader, trainB_loader, testA_loader, testB_loader, G_A2B,
                         'D_optim': D_optim.state_dict(),
                         'iter': i,
                     },
-                    os.path.join(model_path, 'ck.pt'),
+                    drive_path,
                 )
 
 
