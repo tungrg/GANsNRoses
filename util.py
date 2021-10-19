@@ -7,7 +7,8 @@ import matplotlib.pyplot as plt
 
 
 google_drive_paths = {
-    "GNR_checkpoint.pt": "https://drive.google.com/u/0/uc?id=1xdjoTp0oRAXZpixYQmmQ-5rlXV36bSq-&export=download", # full checkpoint
+    #"GNR_checkpoint.pt": "https://drive.google.com/u/0/uc?id=1xdjoTp0oRAXZpixYQmmQ-5rlXV36bSq-&export=download", # full checkpoint
+    "GNR_checkpoint.pt": "https://drive.google.com/uc?id=1IMIVke4WDaGayUa7vk_xVw1uqIHikGtC",
     "GNR_checkpoint_new.pt": "https://drive.google.com/uc?id=1PQ_SRLfFsXO_9z_OW5H9gKhhmIMn7H-p",
 }
 
